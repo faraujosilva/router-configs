@@ -2,10 +2,10 @@
 apiVersion: network.argonetops.io/v1alpha1
 kind: InterfaceConfig
 metadata:
-  name: rt01-eth02
+  name: rt02-eth02
   namespace: routers
 spec:
-  deviceName: router01 # Referência ao DeviceConfig
+  deviceName: router02 # Referência ao DeviceConfig
   interfaceName: Ethernet0/2
   description: testa bem 2
   ipAddress: 10.1.0.1

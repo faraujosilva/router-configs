@@ -1,0 +1,20 @@
+---
+apiVersion: network.argonetops.io/v1alpha1
+kind: DeviceConfig
+metadata:
+  name: router02
+  namespace: routers
+spec:
+  hostname: router02
+  ip: 192.168.244.152
+  deviceType: cisco_ios
+  port: 22
+  access: ssh
+  username:
+    configMapKeyRef:
+      name: device-credentials
+      key: username
+  password:
+    configMapKeyRef:
+      name: device-credentials
+      key: password
