@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  namespace: routers
+  namespace: argocd
   name: router01
 spec:
   destination:
@@ -17,7 +17,7 @@ spec:
       recurse: true
   syncPolicy:
     automated:
-      selfHeal: false
-      prune: false
+      selfHeal: true
+      prune: true
     syncOptions:
       - CreateNamespace=true
