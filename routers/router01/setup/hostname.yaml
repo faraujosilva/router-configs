@@ -3,6 +3,7 @@ apiVersion: network.argonetops.io/v1alpha1
 kind: DeviceConfig
 metadata:
   name: router01
+  namespace: routers
 spec:
   hostname: router01
   ip: 192.168.244.151

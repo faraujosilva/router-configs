@@ -3,6 +3,7 @@ apiVersion: network.argonetops.io/v1alpha1
 kind: InterfaceConfig
 metadata:
   name: eth02
+  namespace: routers
 spec:
   deviceName: router01 # Referência ao DeviceConfig
   interfaceName: Ethernet0/2
