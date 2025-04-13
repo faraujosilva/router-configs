@@ -8,7 +8,6 @@
 # stringData:
 #   url: https://github.com/faraujosilva/router-configs.git
 #   username: oauth2
-#   password: ""
 #   type: git
 
 ---
