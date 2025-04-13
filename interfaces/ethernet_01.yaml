@@ -1,0 +1,14 @@
+
+---
+apiVersion: network.argonetops.io/v1alpha1
+kind: InterfaceConfig
+metadata:
+  name: eth01
+spec:
+  deviceName: router01 # Referência ao DeviceConfig
+  interfaceName: Ethernet0/1
+  description: testa bem
+  ipAddress: 10.0.0.1
+  subnetMask: 255.255.255.0
+  shutdown: false
+
