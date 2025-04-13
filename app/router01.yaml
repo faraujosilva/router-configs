@@ -1,0 +1,21 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  namespace: argocd
+  name: router01
+spec:
+  destination:
+    namespace: argocd
+    server: "https://kubernetes.default.svc"
+  project: routers
+  source:
+    repoURL: https://github.com/faraujosilva/router-configs.git
+    path: routers/router01
+    targetRevision: main
+    directory:
+      recurse: true
+  syncPolicy:
+    automated:
+      selfHeal: true
+
